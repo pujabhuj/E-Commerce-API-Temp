@@ -344,7 +344,8 @@
 
 - [] [Docgen Library] (https://github.com/thedevsaddam/docgen)
 - [] Export Postman Collection
-- [] docgen build -i fileName.json -o index.html
+- [] docgen build -i 11-Ecommerce-API_docs.json -o index.html
+windows_amd64 build -i 11-Ecommerce-API_docs.json -o index.html
 - [] create index.html in public
 
 #### Security Packages
