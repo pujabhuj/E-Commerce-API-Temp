@@ -44,8 +44,6 @@ app.use(xss());
 app.use(mongoSanitize());
 
 
-//middleware used access jason data in req body
-app.use(morgan('tiny'))
 app.use(express.json()) 
 app.use(cookieParser(process.env.JWT_SECRET))
 
@@ -55,10 +53,6 @@ app.use(fileUpload())
 app.get('/',(req,res) =>{
     res.send('<h1>E-commerce API</h1>')
 })
-app.get('/api/v1',(req,res) =>{
-    console.log(req.signedCookies )
-    res.send('<h1>E-commerce API</h1>')
-}) 
 
 app.use('/api/v1/auth',authRouter)
 app.use('/api/v1/users',userRouter)
