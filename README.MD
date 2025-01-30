@@ -371,7 +371,9 @@ windows_amd64 build -i 11-Ecommerce-API_docs.json -o index.html
 - [] git add .
 - [] git commit -m "initial commit"
 - [] heroku login
-- [] heroku create "App Name"
+- [] heroku create "App Name" e-commerce-api
+
 - [] git remote -v
 - [] setup env vars in GUI
 - [] git push heroku master/main
+ e-commerce-api
